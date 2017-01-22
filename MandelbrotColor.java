@@ -45,5 +45,6 @@ public class MandelbrotColor {
          new File("data/mandelbrot-S-"
                   + args[0] + "-X-" + args[1]
                   + "-Y-" + args[2] + "-P-" + params.zoom + ".png"));
+                  //
    }
 }
