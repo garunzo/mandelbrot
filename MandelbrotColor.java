@@ -54,6 +54,6 @@ public class MandelbrotColor {
              else image.setRGB(col, row, black /*colors[5]*/);
             }
         }
-        ImageIO.write(image, "png", new File("mandelbrot-scale-"+args[0]+"-offset-"+args[1]+".png"));
+        ImageIO.write(image, "png", new File("data/mandelbrot-scale-"+args[0]+"-offset-"+args[1]+".png"));
     }
 }
