@@ -1,7 +1,7 @@
 import java.io.File;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
-import java.util.*;
+import java.util.*; // this is a comment
 
 public class MandelbrotColor {
 
