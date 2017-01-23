@@ -15,7 +15,7 @@ public class MandelbrotColor {
       ColorMap cm = new ColorMap(max);
 
       // Loop over every point on screen / image
-      for (int row = 0; row < height; row++) {
+      for (int row = 0; row < height; row++) {s
          for (int col = 0; col < width; col++) {
 
           // Translate screen points to complex number plane
