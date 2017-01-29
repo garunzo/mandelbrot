@@ -4,12 +4,11 @@ public class Mandelbrot {
         PlottingParameters pp = new PlottingParameters(args, 1000);
 
         do {
-            ComplexNumber C = pp.currentScreenPosToComplexNumber();
-            ComplexNumber Z = new ComplexNumber(0.0, 0.0); // 0 + 0i
+            ComplexNumber C = pp.currentScreenPosToComplexNumber(); // Pick a complex number, C
+            ComplexNumber Z = new ComplexNumber(0.0, 0.0); // Start Z at 0 + 0i
 
             /* Iterate while magnitude of Z < 2 (or Z^2 < 4; to avoid slow square root operation) */
             for (iterations = 0; Z.magnitudeSquared() < 4 && iterations < pp.max; iterations++) {
-
                 Z.squareComplex().addComplex(C); // Z = Z^2 + C
             }
             pp.setColorCurrentScreenPos(iterations);
