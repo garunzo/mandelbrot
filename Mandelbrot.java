@@ -1,8 +1,8 @@
-import java.io.File;
-import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.File;
 
-public class MandelbrotColor {
+public class Mandelbrot {
 
    public static void main(String[] args) throws Exception {
 
@@ -15,7 +15,7 @@ public class MandelbrotColor {
       ColorMap cm = new ColorMap(max);
 
       // Loop over every point on screen / image
-      for (int row = 0; row < height; row++) {s
+      for (int row = 0; row < height; row++) {
          for (int col = 0; col < width; col++) {
 
           // Translate screen points to complex number plane

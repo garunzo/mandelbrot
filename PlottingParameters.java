@@ -13,8 +13,8 @@ public class PlottingParameters {
          offsetY = Double.parseDouble(args[2]);
          zoom = Integer.parseInt(args[3]);
       } else {
-         System.out.println("Usage: MandelbrotColor <scale> <x-offset> <y-offset> <pixels>");
-         System.out.println("Example: MandelbrotColor 4.0 0.0 0.0 1");
+         System.out.println("Usage: Mandelbrot <scale> <x-offset> <y-offset> <pixels>");
+         System.out.println("Example: Mandelbrot 4.0 0.0 0.0 1");
          valid = false;
       }
       valid = true;
