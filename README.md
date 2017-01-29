@@ -2,7 +2,7 @@
 
 Plots the mandelbrot set with a color scheme.
 
-The primary objective is to make the mandelbrot.java class / code very easy to understand by hiding all other complexity so that even a person unfamiliar with Java can get a basic understanding of the process.
+The primary objective is to make the mandelbrot.java class / code so easy to understand by hiding all other complexity that even a person unfamiliar with Java can get a basic understanding of the process.
 
 Usage: Mandelbrot scale x-offset y-offset zoom
 
