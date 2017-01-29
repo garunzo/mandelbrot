@@ -6,6 +6,7 @@ public class PlottingParameters {
    public double offsetY; // y translation
    public boolean valid;
 
+
    public PlottingParameters(String[] args) {
       if (args.length == 4) {
          scale = Double.parseDouble(args[0]);
@@ -18,5 +19,17 @@ public class PlottingParameters {
          valid = false;
       }
       valid = true;
+   }
+
+   public ComplexNumber translateScreenPosToComplexNumberPlane( int col, int row, int width, int height) {
+      double c_re = (col - width/2)*this.scale/width - this.offsetX;
+      double c_im = (row - height/2)*this.scale/width + this.offsetY;
+      return new ComplexNumber(c_re, c_im);
+   }
+
+   public String pathName(String[] args) {
+      return "images/mandelbrot-S-"
+              + args[0] + "-X-" + args[1]
+              + "-Y-" + args[2] + "-P-" + this.zoom + ".png";
    }
 }
