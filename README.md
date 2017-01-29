@@ -13,8 +13,9 @@ zoom      - increases the number of pixels so that image can be zoomed in more i
 Borrowed initial code from http://codegists.com/snippet/java/mandelbrotcolorjava_rockdrigo_java
 
 Modifications include:
-| Moved a lot of calculation complexity into other methods.  
-| Added ComplexNumbers class to perform basic complex number operations.  
-| Added ability to relocate center of image and zoom.  
-| Added command line parameters to easily alter image.  
-| Changed file naming to include initial parameters.  
+
+Moved a lot of calculation complexity into other methods.  
+Added ComplexNumbers class to perform basic complex number operations.  
+Added ability to relocate center of image and zoom.  
+Added command line parameters to easily alter image.  
+Changed file naming to include initial parameters.  
