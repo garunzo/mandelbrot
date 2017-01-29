@@ -14,7 +14,7 @@ Borrowed initial code from http://codegists.com/snippet/java/mandelbrotcolorjava
 
 Modifications include:
 
-Moved a lot of calculation complexity into other methods.  
+Moved a lot of calculation complexity into other classes/methods.  
 Added ComplexNumbers class to perform basic complex number operations.  
 Added ability to relocate center of image and zoom.  
 Added command line parameters to easily alter image.  
