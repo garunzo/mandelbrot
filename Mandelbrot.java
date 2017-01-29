@@ -4,6 +4,7 @@ import java.io.File;
 
 public class Mandelbrot {
     public static void main(String[] args) throws Exception {
+        int iterations;
 
         PlottingParameters params = new PlottingParameters(args);
         if (!params.valid) return;
@@ -15,18 +16,15 @@ public class Mandelbrot {
 
         for (int row = 0; row < height; row++) {  // Loop over every position on screen / image
             for (int col = 0; col < width; col++) {
-                int iteration_counter = 0;
                 ComplexNumber C = params.translateScreenPosToComplexNumberPlane(col, row, width, height);
                 ComplexNumber Z = new ComplexNumber(0.0, 0.0); // 0 + 0i
 
-                /* Iterate while magnitude of Z < 2 (or Z^2 < 4; avoids performing a slow square root operation) */
-                while (Z.magnitudeSquared() < 4 && iteration_counter < max) {
+                /* Iterate while magnitude of Z < 2 (or Z^2 < 4; avoids slow square root operation) */
+                for (iterations = 0; Z.magnitudeSquared() < 4 && iterations < max; iterations++) {
                     Z.squareComplex().addComplex(C); // f(Z) = Z^2 + C
-                    iteration_counter++;
                 }
-                // If iteration < max, then not in set, so set a color
-                if (iteration_counter < max) image.setRGB(col, row, cm.getColor(iteration_counter));
-                // Otherwise, point is in set, so set color to black
+                // If iteration < max, then not in set, so set a color, otherwise black
+                if (iterations < max) image.setRGB(col, row, cm.getColor(iterations));
                 else image.setRGB(col, row, cm.black());
             }
         }
