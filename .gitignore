@@ -8,7 +8,7 @@ node_modules/
 *.class
 
 ### Generated images ###
-*.png
+#*.png
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
