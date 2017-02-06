@@ -3,7 +3,7 @@ import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import java.util.*;
 
-public class MandelbrotColor {
+public class Mandelbrot {
 
    public static void main(String[] args) throws Exception {
 
