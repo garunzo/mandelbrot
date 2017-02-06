@@ -43,7 +43,7 @@ public class MandelbrotColor {
       }
       // Write the image to a file
       ImageIO.write(image, "png",
-         new File("data/mandelbrot-S-"
+         new File("images/mandelbrot-S-"
                   + args[0] + "-X-" + args[1]
                   + "-Y-" + args[2] + "-P-" + params.zoom + ".png"));
    }
