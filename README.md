@@ -21,3 +21,6 @@ Added ComplexNumbers class to perform basic complex number operations.
 Added ability to relocate center of image and zoom.  
 Added command line parameters to easily alter image.  
 Changed file naming to include initial parameters.  
+
+
+![Mandelbrot Set](https://github.com/garunzo/mandelbrot/raw/master/images/mandelbrot-S-4-X-0-Y-0-P-1.png "Mandelbrot Set")
